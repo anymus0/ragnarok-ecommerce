@@ -56,14 +56,16 @@ export default {
   */
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios',
+    '@nuxt/http',
     '@nuxtjs/pwa'
   ],
   /*
-  ** Axios module configuration
-  ** See https://axios.nuxtjs.org/options
+  ** Http module configuration
+  ** See https://http.nuxtjs.org
   */
-  axios: {},
+  http: {
+    // proxyHeaders: false
+  },
   /*
   ** vuetify module configuration
   ** https://github.com/nuxt-community/vuetify-module
@@ -91,11 +93,16 @@ export default {
   */
   build: {
   },
-
   /*
   ** Server Middleware
   */
   serverMiddleware: {
     '/api': '~/api'
   }
+  /*
+  ** Runtime config
+  ** To use env variables in client code
+  */
+  // publicRuntimeConfig: {},
+  // privateRuntimeConfig: {}
 }
