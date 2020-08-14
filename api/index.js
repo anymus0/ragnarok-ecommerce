@@ -22,10 +22,19 @@ const app = express()
 app.use(express.json())
 
 // Import API Routes
-// app.use(order)
-// app.use(product)
-// app.use(store)
-// app.use(user)
+app.use('/order', order)
+app.use('/product', product)
+app.use('/store', store)
+app.use('/user', user)
+
+// Every route that is unused will redirect to page 404
+app.all(':file', (req, res) => {
+  res.send('ERROR 404!')
+})
+
+app.all('*', (req, res) => {
+  res.redirect('ERROR 404!')
+})
 
 // Export express app
 module.exports = app
