@@ -88,3 +88,6 @@ sw.*
 
 # Vim swap files
 *.swp
+
+# Ignore dev start script
+start_dev.sh
