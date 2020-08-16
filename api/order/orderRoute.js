@@ -1,8 +1,11 @@
 const express = require('express')
 const router = express.Router()
+const controller = require('./orderController')
 
-router.get('/', (req, res) => {
-  res.send('this is order')
-})
+// GET {baseURL}/api/oder/all
+router.get('/all', controller.getOrders)
+
+// GET {baseURL}/api/oder/:id
+router.get(':id', controller.getOrderById)
 
 module.exports = router

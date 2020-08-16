@@ -22,8 +22,8 @@
   - [ ] Buyer
 - [ ] Controllers
   - [ ] Order
-    - [ ] Get all orders (admin only)
-    - [ ] Get order by id (admin only)
+    - [x] Get all orders (admin only)
+    - [x] Get order by id (admin only)
     - [ ] Post order for one item
     - [ ] Post order for the list of items in the cart
   - [ ] Product
@@ -40,6 +40,7 @@
     - [ ] PassportJS
       - [ ] Login (local strategy)
       - [ ] Authorization (JWT to https cookie)
+- [ ] Implement authorization to protect admin only endpoints
 
 <br>
 

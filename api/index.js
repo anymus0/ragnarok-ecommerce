@@ -29,11 +29,11 @@ app.use('/user', user)
 
 // Every route that is unused will redirect to page 404
 app.all(':file', (req, res) => {
-  res.send('ERROR 404!')
+  res.send('ERROR 404!').end()
 })
 
 app.all('*', (req, res) => {
-  res.redirect('ERROR 404!')
+  res.send('ERROR 404!').end()
 })
 
 // Export express app
