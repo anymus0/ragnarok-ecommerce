@@ -15,17 +15,17 @@
 
 ### Back-end
 - [ ] Mongoose models
-  - [ ] Order
+  - [x] Order
   - [ ] Product
   - [ ] Store
   - [ ] User
   - [ ] Buyer
+  - [ ] File
 - [ ] Controllers
-  - [ ] Order
+  - [x] Order
     - [x] Get all orders (admin only)
     - [x] Get order by id (admin only)
-    - [ ] Post order for one item
-    - [ ] Post order for the list of items in the cart
+    - [x] Post order for the current items in the "cart"
   - [ ] Product
     - [ ] Get all products
     - [ ] Get product by id
